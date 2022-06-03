@@ -20,9 +20,8 @@ to see your connection coming from, and `DST_PORT` is the port on the host machi
 If everything is working properly, this should print out a message like "Connection bouncer is listening at: 172.17.0.8:4242".
 Connections made to this IP and port will now be bounced back to the host on port `DST_PORT`, and appear to come from `SPOOFED_IP`.
 
-
-
-For example, if the remote host had a webserver running on 9443, you could used the following arguments with the script above...
+### Example
+If the remote host had a webserver running on 9443, you could used the following arguments with the script above...
 
     ./launch_bouncer.sh 192.168.1.100 9443
 
